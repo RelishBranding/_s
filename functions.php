@@ -109,7 +109,7 @@ function _s_scripts() {
 	
 	$vars = array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-	)
+	);
 	wp_register_script( '_s-theme', get_template_directory_uri() . '/js/theme.js', array(), '20150524', true );
 	wp_localize_script( '_s-theme', '_s', $vars );
 	wp_enqueue_script( '_s-theme' );
